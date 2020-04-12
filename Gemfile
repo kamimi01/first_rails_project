@@ -55,3 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 
 gem 'pry-byebug', group: :development
+
+# production環境で、pg(herokuとposgreSQLを連携するためのgem)
+group :production do
+  gem 'pg', '0.21.0'
+end
